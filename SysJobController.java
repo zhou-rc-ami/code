@@ -168,6 +168,7 @@ public class SysJobController extends BaseController
         {
             return error("ジョブIDを入力してください");
         }
+        int a = 1/0;
         SysJob newJob = jobService.selectJobById(job.getJobId());
         if (newJob == null)
         {
