@@ -45,7 +45,7 @@ public class SysJobController extends BaseController
     {
         String jobName = job.getJobName();
         String jobName2 = job.getJobName();
-        String jobName3 = job.getJobName();
+        String jobName4 = job.getJobName();
         if (!CronUtils.isValid(job.getCronExpression()))
         {
             return error("ジョブ'" + job.getJobName() + "'の" + operation + "に失敗しました。Cron式が正しくありません");
